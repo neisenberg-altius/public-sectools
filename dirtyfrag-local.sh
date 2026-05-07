@@ -259,7 +259,7 @@ if [[ "$ASSESS" == "1" ]]; then
     if [[ -n "$FORENSIC_FLAGS" ]]; then
         bad  "SUSPECT" "indicators: ${FORENSIC_FLAGS% }"
         printf "\n  ${RED}${BOLD}This host has forensic indicators consistent with prior exploitation.${RESET}\n"
-		printf "  If the only indicator is ROOT_LOGINS, this is suspicious only ..\n"
+        printf "  If the only indicator is ROOT_LOGINS, this is suspicious only..\n"
         printf "  Treat as compromised until investigated..\n"
     else
         ok   "forensic" "CLEAN — no indicators of prior exploitation detected"
